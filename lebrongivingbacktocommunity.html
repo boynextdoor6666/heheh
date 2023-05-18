@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="waduh.css">
+    <title>tittle</title>
+    <style>
+        #link {
+            border: 5px solid #33CCCC;
+            box-shadow: 0px 0px 5px 7px ;
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="QUANDALEDINGLE()">SWITCH QUANDALE DINGLE</button>
+        <button onclick="KILLQUANDALEDINGLE()">KILL QUANDALE DINGLE</button>
+    </div>
+    <br>
+    <img id="link" width="350px" src="https://static.wikia.nocookie.net/beluga/images/9/98/Quandale_D.webp/revision/latest?cb=20221012110207">
+
+    <script>
+        let  image = document.getElementById('link')
+        const QUANDALEDINGLE = () => {
+        let link1 = "https://static.wikia.nocookie.net/beluga/images/9/98/Quandale_D.webp/revision/latest?cb=20221012110207"
+        let link2 = "https://yt3.ggpht.com/-E-caNskXIarWObZMgJrHDJ-48QkrA4JpEiKVjOiQu4HDdULFQqOnYpyOKwHgf6KwSXfSKQ8sA=s900-c-k-c0x00ffffff-no-rj"
+        image.src === link1 ?
+        image.src = link2 :
+        image.src = link1
+        }
+
+        const KILLQUANDALEDINGLE = () => {
+            image.hidden ?
+            image.hidden = false :
+            image.hidden = true
+        }
+ 
+    </script> 
+    
+</body>
+</html>
