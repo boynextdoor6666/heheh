@@ -1,0 +1,97 @@
+.container {
+    border: 5px solid black;
+    width: 400px;
+    height: 400px;
+    background: repeating-linear-gradient(-25deg, gray, gray 20px, black 20px, black 40px, gray 40px, gray 60px,black 60px, black 80px); animation:4s linear infinite;
+    
+    animation: run 7s linear infinite;
+    background-size: 200% 200%;
+    transform: translateX(15px);
+    cursor: pointer;
+    transition: 1s;
+    transform: matrix(360deg);
+ }
+ @keyframes run {
+     0% { 
+     background-position: 100% 100%; } 100%
+         {
+             background-position: 0% 50%; } 
+            } 
+            .container:before {
+                 content: ''; display: block; box-sizing: border-box; width: 100%; height: 100%; z-index: 12; border-right-style: solid; border-left-style: solid; border-right-width: 10px; border-right-color: rgba(120, 120, 120, 0.1); border-left-width: 14px; border-left-color: rgba(60, 60, 60, 0.1);
+                 }
+.holymoly {
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 350px;
+    height: 150px;
+    background-color: black;
+    transform: translate(7px,-160px)
+
+}
+div {
+    box-shadow: 10px 5px 5px black rgba(0,0,0,0.15);
+    transition: box-shadow 1ms;
+}
+div::after {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+            
+            
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+h1 {
+    font-family: 'VT323', monospace;
+    color: white;
+    font-family: 'Cartoon', sans-serif;
+}
+h2 {
+    transform: translateY(300px);
+    font-family: 'Kablammo', cursive;
+    transform: translateY(20px);
+}
+.container:hover {
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 10px 5px 5px black;
+    
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    transform: translate(49px,-200px);
+    border-radius: 15px;
+    border: 2px solid white;
+    
+}
+
+
+
+h1 {
+    
+    transform: translate(20px,-200px);
+}
+.container2 {
+    border: 5px solid black;
+    width: 400px;
+    height: 600px;
+    background: repeating-linear-gradient(-25deg, gray, gray 20px, black 20px, black 40px, gray 40px, gray 60px,black 60px, black 80px); animation:4s linear infinite;
+    
+    animation: run 7s linear infinite;
+    background-size: 200% 200%; 
+    transform: translate(-20px,-600px);
+}
+.holymoly2 {
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 350px;
+    height: 150px;
+    background-color: black;
+    transform: translate(7px,-160px);
+}
+a {
+    color: white;
+}
