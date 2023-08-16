@@ -1,0 +1,69 @@
+.hero {
+    width: 1500px;
+    height: 1080px;
+    background-image: url(https://kartinkin.net/pics/uploads/posts/2022-07/1658513813_44-kartinkin-net-p-setka-dlya-piksel-arta-oboi-48.jpg);
+}
+body {
+    margin: 0%;
+}
+.calendar {
+    width: 500px;
+    height: 450px;
+    background-color:#725DAF ;
+    margin: 0%;
+    border: 6px solid white;
+    border-radius: 45px;
+    animation: go 7s linear infinite;
+    align-items: center;
+    display: flex;
+    animation: moving infinite 5s;
+}
+@keyframes moving {
+    from {background-color: #725DAF;}
+    to {background-color:#008500 ;}
+}
+
+.right, .left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    flex-direction: column;
+}  
+.right {
+    width: 55%;
+    background-color:#8A7406 ;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    animation: fire infinite 5s;
+    --mask: conic-gradient(from 50deg at left,#0000,#000 1deg 79deg,#0000 80deg) 50%/100% 50.35px;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+}
+@keyframes fire {
+    from {background-color: #8A7406;}
+    to {background-color:#FF6C00 ;}
+}
+.left {
+    width: 50%;
+}
+p {
+    font-family: 'Handjet', cursive;
+    font-size: larger;
+}
+#date {
+    font-size: 60px;
+}
+#day {
+    font-size: 60px;
+}
+#month {
+    font-size: 60px;
+}
+#year {
+    font-size: 60px;
+}
+
+      

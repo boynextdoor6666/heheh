@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylestyle.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@800&family=Kablammo&family=Kanit:wght@900&display=swap');
+      </style>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="calendar">
+            <div class="left">
+                <p id="date">15</p>
+                <p id="day">TUESDAY</p>
+            </div>
+            <div class="right">
+                <p id="month">SEPTEMBER</p>
+                <p id="year">1939</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const date = document.getElementById('date');
+        const day = document.getElementById('day');
+        const month = document.getElementById('month');
+        const year = document.getElementById('year');
+
+        const today = new Date()
+        const weekDays = ["БЕЗДЕЛЬНИК","ПОВТОРНИК","БРЕДА","ЧЕРТЕГДЕРГ","РАССЛАПЯТНИЦА","КЛУББОТА","ВЫСПЛЮСЕНЬЕ",]
+        const allMonth = ["ЯНВАРЬ","ФЕВРАЛЬ","МАРТ","АПРЕЛЬ","МАЙ","ИЮНЬ","ИЮЛЬ","АВГУСТ","СЕНТЯБРЬ","ОКТЯБРЬ","НОЯБРЬ","ДЕКАБРЬ",]
+        date.innerHTML=today.getDate()
+        day.innerHTML=today.getDay()
+        month.innerHTML=today.getMonth()
+        year.innerHTML=today.getFullYear()
+        console.log(weekDays)
+    </script>
